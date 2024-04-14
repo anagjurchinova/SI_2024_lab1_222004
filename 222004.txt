@@ -1,0 +1,50 @@
+1.	git init vo SI_2024_lab1_222004 // inicijaliziranje na git vo lokalen repozitorium
+2.	git remote add origin link do repositorium
+3.	nano README.md
+4.	git add README.md
+5.	git commit -m "Initial commit"
+6.	git add *.java
+7.	git commit -m "Add starter code"
+8.	git branch bug1
+9.	git branch bug2
+10.	git checkout bug1
+11.	nano SILab1_1.java
+12.	git add SILab1_1.java
+13.	git commit -m "Fix wrong condition in filterOddLengthStrings"
+14.	git checkout bug2
+15.	nano SILab1_2.java
+16.	git add SILab1_2.java
+17.	git commit -m "Fix wrong condition in makeBigStringFrom"
+18.	git checkout bug1
+19.	nano SILab1Main.java
+20.	git add SILab1Main.java
+21.	git commit -m "Call method filterOddLengthStrings in main class"
+22.	git checkout bug2
+23.	nano SILab1Main.java
+24.	git add SILab1Main.java
+25.	git commit -m "Call method makeBigStringFrom in main class"
+26.	git push -u origin master
+27.	git push -u origin bug1
+28.	git push -u origin bug2
+29.	git checkout master
+30.	git merge bug1 // grankata ke se spoi po strategijata Fast-forward
+31.	git push -u origin master
+32.	git push -u origin bug1
+33.	git push -u origin bug2
+34.	git checkout bug2
+35.	git rebase master //pojava na konflikt
+36.	nano SILab1Main.java // konfliktot e razresen taka sto gi izbrisav site linii od kodot kade shto imase “>> , << , ===”
+37.	git add SILab1Main.java
+38.	git commit -m "Call method makeBigStringFrom in main class"
+39.	git rebase --continue
+40.	git checkout master
+41.	git merge bug2 //Spojuvanjeto ke se izvrshi po strategijata Fast-forward
+42.	git push origin master
+43.	git push origin bug1
+44.	git push --force origin bug2
+45.	git add *.txt
+46.	git commit -m "Final commit"
+47.	git push -u origin master
+48.	git push -u origin bug1
+49.	git push -u origin bug2
+
